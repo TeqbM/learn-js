@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          hr {
+               border: 0;
+               border-top: 1px solid #ccc;
+          }
+
+          .h-full {
+               height: 100vh;
+          }
+          .bg-red{
+               background-color: red;
+          }
+     </style>
+</head>
+
+<body>
+
+     <h1>h1 Lorem, ipsum dolor.</h1>
+     <h3>h3 Lorem, ipsum dolor.</h3>
+     <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eaque sunt ea nemo facilis molestiae, nisi at sed explicabo. Libero repellat velit veniam voluptatem enim. Consequatur veniam sunt perspiciatis.
+     </p>
+     <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum eaque sunt ea nemo facilis molestiae, nisi at sed explicabo. Libero repellat velit veniam voluptatem enim. Consequatur veniam sunt perspiciatis.
+     </p>
+     <di class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis at, molestias enim, alias tenetur
+          optio doloremque modi, eos est eum adipisci provident quisquam officiis maxime ducimus corrupti fuga id.
+     </di>
+
+     <br />
+     <hr />
+     <br />
+     <button class="btn">Button</button>
+     <div class="h-full"></div>
+     <div class="h-full"></div>
+
+     <script>
+
+          let txt = document.querySelector('.text');
+          window.addEventListener("scroll", () => {
+               let sTop = window.pageYOffset;
+               if (sTop > 100) {
+                    txt.classList.add("bg-red")
+               } else {
+                    txt.classList.remove("bg-red")
+               }
+          })
+
+
+
+     </script>
+</body>
+
+</html>

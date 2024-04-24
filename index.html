@@ -1,92 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <style>
-          html{
-               scroll-behavior: smooth;
+          hr {
+               border: 0;
+               border-top: 1px solid #ccc;
           }
-          .flex{
-               display: flex;
-               align-items: start;
-          }
-          .w-7{
-               min-width: 70%;
-          }
-          .w-3{
-               min-width: 30%;
-               padding: 10px;
-               background-color: #eee;
-               border-radius: 10px;
-               border:1px solid #e3e3e3;
-               position: sticky;
-               top: 10px;
-          }
-          .container{
-               width: 100%;
-               max-width: 1200px;
-               margin: 0 auto;
-          }
-          .con{
+
+          .h-full {
                height: 100vh;
+          }
+
+          .bg-red {
+               background-color: red;
           }
      </style>
 </head>
+
 <body>
 
      <h1>h1 Lorem, ipsum dolor.</h1>
      <h3>h3 Lorem, ipsum dolor.</h3>
-     <div class="container">
+     <di class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis at, molestias enim, alias tenetur
+          optio doloremque modi, eos est eum adipisci provident quisquam officiis maxime ducimus corrupti fuga id.
+     </di>
+     <ul id="menu" class="menu">
+          <li><a href="/html">HTML</a></li>
+          <li><a href="/css">CSS</a></li>
+          <li><a href="/javascript">JavaScript</a></li>
+          <li>C</li>
 
-          <div class="flex">
-               <div class="w-7" id="site-content">
-                    <div class="con">
-                         <h2>heading 1</h2>
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate!
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate!
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate!
-                    </div>
-                    <div class="con">
-                         <h2>heading 2</h2>
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate!
-                    </div>
-                    <div class="con">
-                         <h2>heading 3</h2>
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate!
-                    </div>
-                    <div class="con">
-                         <h2>heading 4</h2>
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates beatae ad culpa, dolore molestias maiores! Facere, pariatur, quibusdam repellat velit corrupti dolore animi quae laudantium ad, labore omnis ab. Cupiditate!
-                    </div>
-               </div>
-               <div class="w-3">
-                    <div id="table-con">
-     
-                    </div>
-               </div>
-          </div>
-     </div>
-     
+          <select>
+               <option value="blues">Blues</option>
+               <option value="rock">Rock</option>
+               <option value="classic">Classic</option>
+          </select>
+     </ul>
+
+     <form action="" id="form">
+          <input type="text" placeholder="Name">
+     </form>
+
      <br />
      <hr />
      <br />
      <button class="btn">Button</button>
 
      <script>
-         
-          let tabc = document.getElementById("table-con");
-          
-          let tabh = document.querySelectorAll("#site-content h2");
-          
-          console.log(tabh);
+          console.log("outer start");
 
-          tabh.forEach((item,inx)=>{
-               tabc.innerHTML += `<h3><a href="#${"heading_"+inx}">${item.innerHTML}</a></h3>`;
-               item.setAttribute("id", "heading_"+inx)
-          })
-          
+          window.onload= ()=>{
+               console.log("inside");
+          }
+
+
+          console.log("outer end");
      </script>
-</body>
+
 </html>
