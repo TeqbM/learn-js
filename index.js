@@ -1,1 +1,8 @@
-console.log(2+ parseInt("2"));
+class User{
+     constructor(name){
+          this.name = name;
+     }
+}
+let user = new User("MukesH");
+
+console.log(user.name);

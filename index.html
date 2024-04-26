@@ -52,14 +52,14 @@
      <button class="btn">Button</button>
 
      <script>
-          console.log("outer start");
-
-          window.onload= ()=>{
-               console.log("inside");
+          class User{
+               constructor(name){
+                    this.name = name;
+               }
           }
-
-
-          console.log("outer end");
+          let user = new User("MukesH");
+          
+          console.log(user.name);
      </script>
 
 </html>
