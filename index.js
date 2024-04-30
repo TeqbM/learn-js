@@ -1,4 +1,2 @@
-
-let promiseOne = new Promise(function (resolve, reject){});
-
-console.log(promiseOne);
+let http = require("http");
+let fs = require("fs");
