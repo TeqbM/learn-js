@@ -6,14 +6,16 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <style>
+
           hr {
                border: 0;
                border-top: 1px solid #ccc;
           }
-
+          
           .h-full {
                height: 100vh;
                border: 1px solid;
+               margin: 10px 0;
           }
 
           .bg-red {
@@ -54,43 +56,10 @@
      <div class="h-full" id="demo2"></div>
      
 
-<script>
-           
-     
-     let rImg1 = document.getElementById('revealImage1')
-     let rImg1Rect = rImg1.getBoundingClientRect();
-     let rImg2 = document.getElementById('revealImage2');
-     let rImg2Rect = rImg2.getBoundingClientRect();
-     let rImg3 = document.getElementById('revealImage3');
-     let rImg3Rect = rImg3.getBoundingClientRect();
-     document.addEventListener("scroll",()=>{
+     <script> 
           
-          if(pageYOffset > (rImg1Rect.top - 300) && pageYOffset < (rImg1Rect.top + rImg1Rect.height - 350)){
-               console.log('true');
-               rImg1.style.zIndex = 50
-               rImg2.style.zIndex = 45
-               rImg2.style.marginTop = "-90px"
-               rImg3.style.zIndex = 40
-               rImg3.style.marginTop = "-70px"
-          } else if(pageYOffset > (rImg2Rect.top - 400) && pageYOffset < (rImg2Rect.top + rImg2Rect.height - 400)) {
-               console.log('true 2');
-               rImg1.style.zIndex = 45
-               rImg2.style.zIndex = 50
-               rImg2.style.marginTop = "-90px"
-               rImg3.style.zIndex = 40
-               rImg3.style.marginTop = "-70px"
-          }
-          else if(pageYOffset > (rImg3Rect.top - 500)){
-               console.log('false');
-               rImg1.style.zIndex = 40
-               rImg2.style.zIndex = 45
-               rImg2.style.marginTop = "-70px"
-               rImg3.style.zIndex = 50
-               rImg3.style.marginTop = "-90px"
-          }
-     })
-     
-</script>
+     </script>
+
 </body>
 
 </html>
