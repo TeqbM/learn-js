@@ -1,5 +1,12 @@
+var mysql = require('mysql');
 
-let num =[1,2,3,4,5,6,7,8,9,10];
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: ""
+});
 
-let sumW = num.reduce((accumulator, curentVal)=> accumulator,0)
-console.log(sumW);
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
